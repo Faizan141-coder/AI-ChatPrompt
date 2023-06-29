@@ -2,11 +2,11 @@
 
 import { useState } from 'react'
 import { useSession } from 'next-auth/react'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 
 import Form from '@components/Form'
 
-const CreatePrmopt = () => {
+const CreatePrompt = () => {
     const router = useRouter()
     const { data: session } = useSession()
 
@@ -16,7 +16,7 @@ const CreatePrmopt = () => {
         tag: ''
     })
 
-    const createPrmopt = async (e) => {
+    const createPrompt = async (e) => {
         e.preventDefault()
         setSubmitting(true)
         try {
@@ -24,7 +24,7 @@ const CreatePrmopt = () => {
                 method: 'POST',
                 body: JSON.stringify({
                     prompt: post.prompt, 
-                    userId: session ?.user.id,
+                    userId: session?.user.id,
                     tag: post.tag
                 })
             })
@@ -45,9 +45,9 @@ const CreatePrmopt = () => {
             post={post}
             setPost={setPost}
             submitting={submitting}
-            handleSubmit={createPrmopt}
+            handleSubmit={createPrompt}
         />
     )
 }
 
-export default CreatePrmopt
+export default CreatePrompt

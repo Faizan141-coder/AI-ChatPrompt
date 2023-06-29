@@ -6,8 +6,8 @@ export const POST = async (req) => {
 
     try {
         await connectToDB()
-        const newPrompt = await Prompt.create({
-            creator: userId, 
+        const newPrompt = new Prompt({
+            creator: userId,
             prompt,
             tag
         })
