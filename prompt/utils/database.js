@@ -5,8 +5,6 @@ let isConnected  // track the connection
 export const connectToDB = async () => {
   mongoose.set('strictQuery', true);
 
-  
-
   try {
     await mongoose.connect(process.env.MONGO_URI, {
       dbName: "faizan",
