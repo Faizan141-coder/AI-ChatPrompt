@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.env
 
 # testing
 /coverage
@@ -11,25 +12,6 @@
 # next.js
 /.next/
 /out/
-.env
-
-
-prompts/.next/server/app-paths-manifest.json
-prompts/.next/server/app-paths-manifest.json
-prompts/.next/server/middleware-manifest.json
-prompts/.next/server/pages-manifest.json
-prompts/.next/server/server-reference-manifest.js
-prompts/.next/server/server-reference-manifest.json
-prompts/.next/types/package.json
-prompts/node_modules/@next/swc-win32-x64-msvc/next-swc.win32-x64-msvc.node
-prompts/.next/server/app-paths-manifest.json
-prompts/.next/server/middleware-manifest.json
-prompts/.next/server/pages-manifest.json
-prompts/.next/server/server-reference-manifest.js
-prompts/.next/server/server-reference-manifest.json
-prompts/.next/types/package.json
-prompts/node_modules/@next/swc-win32-x64-msvc/next-swc.win32-x64-msvc.node
-
 
 # production
 /build
